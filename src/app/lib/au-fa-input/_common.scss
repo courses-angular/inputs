@@ -1,0 +1,32 @@
+.icon{
+  width: 20px;
+  background: white;
+  padding-left: 5px;
+  padding-right: 2px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+:host{
+  //border:1px solid lightgray;
+  //border-width:1px;
+  // border-style: solid;
+  padding-bottom: 5px;
+  display: inline-block;
+
+  &.input-focus{
+    outline: none;
+    //border: 1px solid #4D90FE;
+    border-width: 1px;
+    border-style: solid;
+
+  }
+
+}
+:host::ng-deep input{
+  border: none;
+  outline: none;
+  height: 100%;
+  margin: 1px 10px;
+  box-sizing: border-box;
+}

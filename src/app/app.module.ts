@@ -3,14 +3,19 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AuFaInputComponent } from './lib/au-fa-input/au-fa-input.component';
+import { InputRefDirective } from './lib/directives/input-ref.directive';
+import {InputCompModule} from './lib/input-comp.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InputCompModule
   ],
   providers: [],
   bootstrap: [AppComponent]

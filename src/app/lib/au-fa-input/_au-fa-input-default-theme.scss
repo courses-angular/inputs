@@ -1,0 +1,10 @@
+$border-color: #4D90FE;
+
+:host{
+  background: white;
+  border-color: lightgray;
+  &.input-focus{
+    border-color: $border-color;
+    box-shadow: 0 0 5px $border-color;
+  }
+}

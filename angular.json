@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "input-comp": {
+      "projectType": "library",
+      "root": "projects/input-comp",
+      "sourceRoot": "projects/input-comp/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/input-comp/tsconfig.lib.json",
+            "project": "projects/input-comp/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/input-comp/src/test.ts",
+            "tsConfig": "projects/input-comp/tsconfig.spec.json",
+            "karmaConfig": "projects/input-comp/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/input-comp/tsconfig.lib.json",
+              "projects/input-comp/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "input-boxes"
 }

@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "input-comp": [
+        "dist/input-comp"
+      ],
+      "input-comp/*": [
+        "dist/input-comp/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
